@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <style>
+        /* Стили для центрирования формы */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Стилі для контейнера форми */
+        .registration-form {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Заголовок форми */
+        .registration-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Стилі для полів форми */
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        /* Стилі для обов'язкових полів */
+        .registration-form input[required] {
+            background-color: #f9f9f9;
+        }
+
+        /* Стилі для валідних полів */
+        .registration-form input:valid {
+            border-color: #28a745;
+        }
+
+        /* Стилі для невалідних полів */
+        .registration-form input:invalid {
+            border-color: #dc3545;
+        }
+
+        /* Кнопка відправки */
+        .registration-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .registration-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit minus obcaecati blanditiis dolores. Iure non suscipit ex! Minus animi iusto enim perferendis voluptatem provident pariatur natus unde deserunt voluptas.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident deserunt iusto atque architecto libero nostrum suscipit pariatur, doloremque praesentium itaque! Incidunt et natus similique dolorum vero sit alias non magni.</p>
+    <div class="registration-form">
+      <h2>Реєстрація</h2>
+        <form>
+            <!-- Поле імені, обов'язкове, мінімум 2 символи -->
+            <input type="text" name="username" placeholder="Ім'я" required minlength="2">
+
+            <!-- Поле електронної пошти, обов'язкове -->
+            <input type="email" name="email" placeholder="Електронна пошта" required>
+
+            <!-- Поле пароля, обов'язкове, мінімум 6 символів -->
+            <input type="password" name="password" placeholder="Пароль" required minlength="6">
+
+            <!-- Кнопка відправки -->
+            <button type="submit">Зареєструватися</button>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
