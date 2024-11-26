@@ -7,7 +7,7 @@ body, html {
   font-family: Arial, sans-serif;
 }
 
-/* Стилі для контейнера форми */
+
 .registration-form {
   position: fixed;
   top: 50%;
@@ -21,13 +21,11 @@ body, html {
   float:right;
 }
 
-/* Заголовок форми */
 .registration-form h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Стилі для полів форми */
 .registration-form input[type="text"],
 .registration-form input[type="email"],
 .registration-form input[type="password"] {
@@ -40,22 +38,18 @@ body, html {
   transition: border-color 0.3s;
 }
 
-/* Стилі для обов'язкових полів */
 .registration-form input[required] {
   background-color: #f9f9f9;
 }
 
-/* Стилі для валідних полів */
 .registration-form input:valid {
   border-color: #28a745;
 }
 
-/* Стилі для невалідних полів */
 .registration-form input:invalid {
   border-color: #dc3545;
 }
 
-/* Кнопка відправки */
 .registration-form button {
   width: 100%;
   padding: 10px;
